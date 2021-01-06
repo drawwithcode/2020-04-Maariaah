@@ -34,21 +34,26 @@ function setup() {
 }
 
 function draw() {
+  let body = document.getElementsByTagName("body")[0];
+  body.style.background = "#121212";
   noLoop();
   //Set elements to DOM
-  messageText = createElement("p").position(400, 920);
+  messageText = createElement("p")
+    .position(400, 920)
+    .style("color", "white");
   titleText = createElement(
-    "h4",
+    "p",
     "Read below word loudly untill you do it right to undress this handsome policeman:"
-  ).position(400, 10);
-  inputText = createElement("h2");
-  inputText.html("Holy shit!").position(400, 40);
+  ).position(400, 10)
+  .style("color", "white");
+  inputText = createElement("h2")
+  inputText.html("Holy shit!").position(400, 40).style("color", "#6373b7");
   figure = createElement("div")
     .class("human")
     .attribute("height", "730px")
     .position(195, 100);
   figure.attribute("position", "relative");
-  let body = createImg("assets/body.png")
+  humanBody = createImg("assets/body.png")
     .id("body")
     .class("clothes")
     .position(195, 46)
@@ -81,7 +86,7 @@ function draw() {
     .position(285, 410)
     .attribute("height", "75px");
 
-  figure.child(body);
+  figure.child(humanBody);
   figure.child(hat);
   figure.child(panties);
   figure.child(sunglasses);
