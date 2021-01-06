@@ -48,34 +48,34 @@ function draw() {
     .attribute("height", "730px")
     .position(195, 100);
   figure.attribute("position", "relative");
-  let body = createImg("/assets/body.png")
+  let body = createImg("assets/body.png")
     .id("body")
     .class("clothes")
     .position(195, 46)
     .attribute("height", "750px");
-  let hat = createImg("/assets/hat.png")
+  let hat = createImg("assets/hat.png")
     .id("hat")
     .class("clothes")
     .position(304, 40)
     .attribute("height", "60px");
-  let sunglasses = createImg("/assets/sunglasses.png")
+  let sunglasses = createImg("assets/sunglasses.png")
     .id("sunglasses")
     .class("clothes")
     .position(323, 105)
     .attribute("height", "25px");
-  let shirt = createImg("/assets/shirt.png")
+  let shirt = createImg("assets/shirt.png")
     .id("shirt")
     .class("clothes")
     .position(242, 150)
     .attribute("height", "210px");
 
-  let trousers = createImg("/assets/trousers.png")
+  let trousers = createImg("assets/trousers.png")
     .id("trousers")
     .class("clothes")
     .position(265, 340)
     .attribute("height", "370px");
 
-  let panties = createImg("/assets/panties.png")
+  let panties = createImg("assets/panties.png")
     .id("panties")
     .class("clothes")
     .position(285, 410)
